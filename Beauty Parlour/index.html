@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Parlour</title>
+    <style>
+        /*  *{
+             margin: 0;
+            padding: 0;
+            border-radius: border-box; 
+        }  */
+        .top {
+            background-image: url(./Images/Screenshot\ 2023-08-06\ 202722.png);
+            background-size: cover;
+            height: 600px;
+        }
+
+        .dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            /* position: absolute;  */
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover,
+        .li li:hover {
+            background-color: #E21924;
+            color: white;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .li li,
+        .loc img {
+            display: inline;
+            padding-left: 65px;
+        }
+
+        .li {
+            position: relative;
+            left: 300px;
+            bottom: 40px;
+        }
+
+        .icon {
+            position: fixed;
+            z-index: 1;
+        }
+
+        .text-top {
+            z-index: 1;
+            position: relative;
+            left: 310px;
+            bottom: 450px;
+        }
+
+        .btn:hover {
+            background-color: #EE1A26;
+            transition: 0.3s;
+        }
+
+        .btn {
+            padding: 10px;
+            display: inline;
+        }
+
+        .btn-2:hover {
+            background-color: #EE1A26;
+            transition: 0.3s;
+        }
+
+        .btn-2 {
+            padding: 10px;
+            display: inline;
+        }
+
+        .centre {
+            background-image: url(./Images/mid-back-pic.jpg);
+            width: 1220px;
+            height: 550px;
+            position: relative;
+            bottom: 600px;
+        }
+
+        .but-3:hover {
+            background-color: #E21924;
+            color: white;
+            transition: 0.2s;
+        }
+
+        .text-3 {
+            position: relative;
+            left: 600px;
+            top: 100px;
+        }
+
+        .srvs-1 p,
+        h3,
+        .srvs-2 p,
+        h3,
+        .srvs-3 p,
+        h3 {
+            color: #181818;
+        }
+
+        .one-a p,
+        .one-b p,
+        .one-c p {
+            color: #525252;
+        }
+
+        .one-a h3,
+        .one-b h3,
+        .one-c h3 {
+            color: #E21924;
+        }
+
+        .one-a,
+        .one-b,
+        .one-c {
+            -moz-box-shadow: 0 0 10px #777777;
+            -webkit-box-shadow: 0 0 10px #777777;
+            box-shadow: 0 0 10px #777777;
+            width: 300px;
+        }
+
+        .abc {
+            display: flex;
+            padding-left: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <div class="nav">
+            <img style="cursor: pointer; position: relative; left: 15px; top: 15px;" src="./Images/logo.png" alt=""
+                width="85px" height="85px">
+        </div>
+        <div class="container">
+            <div class="li">
+                <ul id="MenuItems">
+                    <li style="list-style: none; color: white;"> <a target="_blank"
+                            style="color: white; text-decoration: none;" href="./about.html"> About Us </a></li>
+                    <li style="list-style: none; color: white;"> <a target="_blank"
+                            style="color: white; text-decoration: none;" href="./service.html"> Srvices </a></li>
+                    <li style="list-style: none; color: white;"> <a target="_blank"
+                            style="color: white; text-decoration: none;" href="./college.html"> College </a></li>
+                    <li style="list-style: none; color: white;"> <a target="_blank"
+                            style="color: white; text-decoration: none;" href="./feedback.html"> Feedback </a></li>
+                </ul>
+            </div>
+            <div class="loc">
+                <img style="position: relative; left: 980px; bottom: 99px;" src="./Images/locator-pic.png">
+            </div>
+        </div>
+        <div class="icon">
+            <img style="position: relative; left: 1170px; top: 124px; cursor: pointer; " src="./Images/icon-img.png"
+                alt="">
+            <img style="position: relative; left: 1000px; top: 134px; cursor: pointer; "
+                src="./Images/whatsapp-logo.webp" alt="" width="110px" height="110px">
+        </div>
+        <div class="stick">
+            <img style="position: relative; left: 280px;" src="./Images/top- pic-line.png" alt="" height="410px">
+        </div>
+        <div class="text-top">
+            <h3 style=" font-family: Brush Script MT, Brush Script Std, cursive; font-size: 50px; color: #EE1A26;">
+                Ultimate Experience</h3>
+            <h3 style="font-size: 42px; color: white;">IN BEAUTY</h3>
+            <p style="font-family: Roboto; color: white; ">Over the span of 40 years, we have been monumental in <br>
+                launching and crafting professional careers of <br> hundreds of female models who have later been or are
+                presently <br> considered highly successful in the entertainment industry all <br> over the world.
+            </p>
+            <p class="btn"
+                style="border: 2px solid #EE1A26; width: 90px; height: 20px; text-align: center; color: white; cursor: pointer;">
+                Learn More</p>
+            <p class="btn"
+                style="border: 2px solid #EE1A26; width: 90px; height: 20px; text-align: center; color: white; cursor: pointer;">
+                Appointment</p>
+        </div>
+    </div>
+
+    <div class="mid">
+        <div class="side-pic">
+            <img style="position: relative; top: 100px; left: 40px;" src="./Images/top-style pic.png" alt=""
+                width="530px">
+        </div>
+        <div class="mid-text"></div>
+        <h3
+            style="  position: relative; left: 615px; bottom: 515px; font-family: 'Brush Script MT', cursive; font-style: italic; font-size: 50px; color: #EE1A26;">
+            About</h3>
+        <h3
+            style=" font-family: 'Times New Roman', Times, serif; font-size: 48px; position: relative; left: 615px; bottom: 550px;">
+            ROSE BEAUTY <br> PARLOUR</h3>
+        <img style="position: relative; left: 618px; bottom: 585px;" src="./Images/top- pic-line.png" alt=""
+            height="130px" width="5px">
+        <p style=" font-size: larger; color: #181818; position: relative; left: 635px; bottom: 740px;">Established and
+            named by her mother Mohtarma Aisha <br> Begam, Rose Beauty Parlour was launched in 1982 by <br> Farhat Ehsan
+            and her husband Sheikh Ehsan as a small <br> beauty salon in Karachi. Today, as we mark the 40th year <br>
+            of our operations in Pakistan, we stand tall as one of the <br> leading brands in the beauty industry of
+            Pakistan.</p>
+        <p style=" font-size: larger; color: #181818; position: relative; left: 615px; bottom: 740px;">Our transition
+            from one single branch primarily offering bridal <br> makeup services, to one of the fastest growing network
+            of <br> modern and full-service Beauty and Hair salons in Pakistan is <br> earmarked with a vision to
+            deliver experiences that not only <br> move hearts and minds but also fuels passion for progress and <br>
+            growth.</p>
+        <p class="btn-2"
+            style=" position: relative; left: 615px; bottom: 740px; border: 2px solid #E21924; width: 90px; height: 20px; text-align: center; color: black; cursor: pointer; ">
+            LEARN MORE</p>
+        <p class="btn-2"
+            style=" position: relative; left: 625px; bottom: 740px; border: 2px solid #E21924; width: 90px; height: 20px; text-align: center; color: black; cursor: pointer;">
+            APPOINTMENT</p>
+    </div>
+    </div>
+    <div class="centre">
+        <div class="text-3">
+            <h3 style=" font-family: Brush Script MT, Brush Script Std, cursive; font-size: 70px; color: #E21924;">Back
+                Online Now</h3>
+            <p style=" font-family: 'Times New Roman', Times, serif; font-size: 48px; color: white;">SAVE UP TO <br> 20%
+                OFF</p>
+            <p class="but-3"
+                style=" color: white; cursor: pointer; border: 2px solid #E21924; width: 300px; padding: 10px; text-align: center; ">
+                CLICK HERE TO GET YOUR CARD!</p>
+        </div>
+    </div>
+    <div class="end">
+        <h3
+            style=" position: relative; bottom: 600px; font-family: Brush Script MT, Brush Script Std, cursive; font-size: 70px; color: #E21924; text-align: center;">
+            Service</h3>
+        <p
+            style=" position: relative; bottom: 620px; font-family: 'Times New Roman', Times, serif; font-size: 48px; text-align: center; ">
+            PREMIUM QUALITY</p>
+
+        <div class="srvs-1">
+            <div class="one-11"
+                style=" position: relative; bottom: 570px; left: 80px; border: 1px solid white; width: 200px; text-align: center;">
+                <img src="./Images/down-dpic-1.jpg" alt="">
+                <h3>Facial & Theraphy </h3>
+                <p>Rose Beauty Parlour has <br> introduced wide range <br> unique, amazing & effective <br> Facials
+                    which gives you the <br> best results by removing <br> blackheads & dead skin cells, <br> also
+                    purify skin & improve the <br> radiance of the skin.</p>
+            </div>
+            <div class="one-12"
+                style=" position: relative; bottom: 910px; left: 370px; border: 1px solid white; width: 200px; text-align: center;">
+                <img src="./Images/down-dpic-2.jpg" alt="">
+                <h3>Bridal Makeup</h3>
+                <p>Calling out all the brides! <br> Experience our Signature <br> Bridal Makeover by Ramsha <br> Ehsan,
+                    Satwat Ehsan and <br> Tasneem Nafees. Our Experts <br> will give you a classic, <br> traditional or
+                    Modern <br> Makeover; you deserve <br> nothing but the best. Get the <br> flawless look by Rose
+                    Beauty <br> Parlour and look perfect on <br> your day.</p>
+            </div>
+            <div class="one-13"
+                style=" position: relative; bottom: 1295px; left: 655px; border: 1px solid white; width: 200px; text-align: center;">
+                <img src="./Images/down-dpic-3.jpg" alt="">
+                <h3>Hair Styling</h3>
+                <p>Great-looking hair is only a <br> few steps away. Rose Beauty <br> Parlour presents new hair <br>
+                    looks trendy styling & amazing <br> color trends. Book a haircut, <br> hairstyle or hair colour
+                    session <br> at Rose Beauty Parlour.</p>
+            </div>
+            <div class="one-14"
+                style=" position: relative; bottom: 1650px; left: 930px; border: 1px solid white; width: 200px; text-align: center;">
+                <img src="./Images/down-dpic-4.jpg" alt="">
+                <h3>Make Up</h3>
+                <p>Rose Beauty Parlour has <br> introduced a wide range of <br> trendy, amazing & latest <br> makeup
+                    techniques. <br> Signature soft & glowy look <br> with subtle shades, perfect <br> contouring, and
+                    highlighter <br> for your special occasion. We <br> have introduced Semi <br> Permanent Organic
+                    Makeup <br> - A complexion treatment <br> enhances eyes, brows, and <br> lips to add definition to
+                    the <br> face. <br>
+                </p>
+            </div>
+        </div>
+        <div class="srvs-2">
+            <div class="two-11"
+                style="position: relative; bottom: 1550px; left: 60px; border: 1px solid white; width: 200px; text-align: center;">
+                <img src="./Images/down-dpic-5.jpg" alt="">
+                <h3>Laser Treatments</h3>
+                <p>Rose Beauty Parlour is offering <br> Laser Treatments. Lasers are <br> great tools that can help <br>
+                    improve various problems of <br> the skin, such as acne <br> scarring, fine lines, wrinkles, <br>
+                    sun spots, and even tattoos <br> and loose skin.</p>
+            </div>
+            <div class="two-12"
+                style=" position: relative; bottom: 1850px; left: 340px; border: 1px solid white; width: 200px; text-align: center;">
+                <img src="./Images/down-dpic-6.jpg" alt="">
+                <h3>Mehndi</h3>
+                <p>Unique and trendy designs <br> being applied at Rose Beauty <br> Parlour. Bridal & party Mehndi <br>
+                    bookings are open.</p>
+            </div>
+            <div class="two-13"
+                style=" position: relative; bottom: 2140px; left: 619px; border: 1px solid white; width: 200px; text-align: center;">
+                <img src="./Images/down-dpic-7.jpg" alt="">
+                <h3>Hands Feet Care</h3>
+                <p>Rose Beauty Parlour provides <br> the best Hands & foot care <br> treatments. We offer women <br>
+                    detox, Spa, manicure, <br> pedicure, feet gloss, hot stone <br> massage & many more.</p>
+            </div>
+            <div class="two-14"
+                style=" position: relative; bottom: 2400px; left: 900px; border: 1px solid white; width: 200px; text-align: center;">
+                <img src="./Images/down-dpic-8.jpg" alt="">
+                <h3>Waxing & Threading</h3>
+                <p>Rose Beauty Parlour's <br> Beauticians will help you to <br> look fantastic with Face <br> Threading
+                    and Face Waxing <br> Services. We use premium <br> Threading and Waxing <br> Products.</p>
+            </div>
+        </div>
+        <div class="srvs-3">
+            <div class="three-11"
+                style=" position: relative; bottom: 2290px; left: 80px; border: 1px solid white; width: 200px; text-align: center;">
+                <img src="./Images/down-dpic-9.jpg" alt="">
+                <h3>Bridal Services</h3>
+                <p>Rose Beauty Parlour is the Best <br> Makeup Salon in Karachi. We <br> offer Bridal weddings makeup
+                    <br> & services for at affordable <br> prices & packages. Choose <br> Rose Beauty Parlour for good
+                    <br> memories and delightful <br> bridal makeup experience.
+                </p>
+            </div>
+            <div class="three-11"
+                style=" position: relative; bottom: 2590px; left: 370px; border: 1px solid white; width: 200px; text-align: center;">
+                <img src="./Images/down-dpic-10.jpg" alt="">
+                <h3>Body Care</h3>
+                <p>Schedule your next body <br> care service at Rose Beauty <br> Parlour. View our menu of <br> massage
+                    therapy & body <br> care services & pick the <br> service that is right for you.</p>
+            </div>
+            <div class="three-11"
+                style=" position: relative; bottom: 2880px; left: 640px; border: 1px solid white; width: 200px; text-align: center;">
+                <img src="./Images/down-dpic-11.jpg" alt="">
+                <h3>Hair Extension</h3>
+                <p>Hair extensions offer an instant <br> and dramatic change in style <br> for a client. Choose the Best
+                    <br> Hair Extensions for You at Rose <br> Beauty Parlour.
+                </p>
+            </div>
+            <div class="three-11"
+                style="position: relative; bottom: 3190px; left: 900px; border: 1px solid white; width: 200px; text-align: center;">
+                <img src="./Images/down-dpic-12.jpg" alt="">
+                <h3>Special Treatment</h3>
+                <p>We provide an extensive <br> range of special treatments <br> which includes 3D facial, Eye <br> Brow
+                    Tint, Lashes Perm, Inno <br> Facial and lashes extension</p>
+            </div>
+        </div>
+    </div>
+    <div class="end-2">
+        <h3
+            style=" position: relative; bottom: 3150px;  font-family: Brush Script MT, Brush Script Std, cursive; font-size: 70px; color: #E21924; text-align: center;">
+            Feedback</h3>
+        <p
+            style=" position: relative; bottom: 3200px;  font-family: 'Times New Roman', Times, serif; font-size: 48px; text-align: center; ">
+            CUSTOMER REVIEW</p>
+
+        <div class="abc" style="position: relative; bottom: 3200px;">
+            <div class="one-a">
+                <h3 style="text-align: center;">WALAA YOUSUF</h3>
+                <p style="text-align: center;">Thank you very much for the <br> services. I am extremely <br> happy to
+                    see a very good <br> difference in my <br> appearance. </p>
+            </div>
+            <div class="one-b" style="position: relative; left: 80px;">
+                <h3 style="text-align: center;">AQSA</h3>
+                <p style="text-align: center;">Great place and service. The <br> lady at Gulshan branch has <br> done
+                    great job, my hair is <br> hard to handle but she does <br> an awesome job.</p>
+            </div>
+            <div class="one-c" style="position: relative; left: 160px;">
+                <h3 style="text-align: center;">EMAAN ALI</h3>
+                <p style="text-align: center;">“Awesome experience at <br> Rose beauty parlour, <br> wonderful customer
+                    service, <br> friendly people and amazing <br> styles!”</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Landing Page -->
+
+    <div class="landing-pg" style=" position: relative; bottom: 3000px; background-color: #F0F0EF;">
+        <hr>
+        <div class="l-pic-logo">
+            <img style="position: relative; top: 70px; left: 40px;" src="./Images/logo.png" alt="" width="110px">
+        </div>
+        <div class="l-text">
+            <p style="position: relative; top: 70px; left: 40px;">Rose provide quality services through a team of <br>
+                highly skilled professionals. Our Signature services <br> include Makeup, Mehndi, Hair, Skin, Laser <br>
+                treatments. Mehendi training program & beauty <br> courses also offered. We strive to exceed our
+                client’s <br> expectation.</p>
+        </div>
+        <div class="aa">
+            <img style="position: relative; top: 70px; left: 40px;" src="./Images/nav-location.png" alt="">
+            <p style="position: relative; top: 23px; left: 70px;">A-570, Block 3, Gulshan-e-Iqbal, Karachi.</p>
+        </div>
+        <div class="dd">
+            <p
+                style=" position: relative; top: 20px; left: 40px;color: #222648; font-weight: bold; font-size: larger; border-bottom: 1px solid black; width: 300px;">
+                info@rosebeautyparlourofficial.com</p>
+            <p style="position: relative; top: 20px; left: 40px; color: #222648; font-weight: bold;">+92-21-34816363 |
+                34834837 | 34834838 | 34817060 <br> | 34977970</p>
+        </div>
+        <div class="q" style="position: relative; left: 600px; bottom: 350px;">
+            <h2>HELP</h2>
+            <li style="list-style: none; color: #222648; line-height: 20px;">FAQ</li>
+            <br>
+            <li style="list-style: none; color: #222648;">Privacy Policy</li>
+            <br>
+            <li style="list-style: none; color: #222648; line-height: 20px;">Terms and Condition</li>
+            <br>
+            <li style="list-style: none; color: #222648;">Returns & Exchanges</li>
+        </div>
+        <div class="w" style="position: relative; left: 770px; bottom: 555px;">
+            <h2>ABOUT</h2>
+            <li style="cursor: pointer; list-style: none; color: #222648; line-height: 20px;">Our Story</li>
+            <br>
+            <li style=" cursor: pointer; list-style: none; color: #222648;">Contact</li>
+            <br>
+            <li style=" cursor: pointer; list-style: none; color: #222648; line-height: 20px;">Branch Location</li>
+        </div>
+        <div class="e">
+            <h1 style="position: relative; left: 600px; bottom: 470px;">AFFILIATION & AWARDS</h1>
+        </div>
+        <div class="i">
+            <img style="position: relative; left: 600px; bottom: 470px;" src="./Images/BRANDS-ICON-2020-LOGO1.png"
+                alt="">
+            <img style="position: relative; left: 610px; bottom: 470px;" src="./Images/Layer-21.png" alt="">
+            <img style="position: relative; left: 620px; bottom: 470px;"
+                src="https://rosebeautyparlourofficial.com/wp-content/uploads/2022/01/ISOLOGO-1024x391.jpg" alt=""
+                width="200px">
+            <hr style="position: relative; bottom: 400px;">
+            <p style=" position: relative; bottom: 400px; font-size: larger; text-align: center;">Copyright © 2023. Rose
+                Beauty Parlour (Pvt.) Ltd. All rights reserved</p>
+        </div>
+        <div class="footer" style="background-color: #000000; position: relative; bottom: 300px;">
+            <p style="color: white; font-size: large; text-align: center; line-height: 50px;">Powered by infinisys.co
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
